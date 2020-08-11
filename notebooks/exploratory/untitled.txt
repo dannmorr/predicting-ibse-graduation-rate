@@ -1,0 +1,3 @@
+total_number_of_school_days
+student_attendance_rate
+student_chronic_truancy_rate
