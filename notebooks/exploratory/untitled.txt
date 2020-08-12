@@ -1,3 +1,57 @@
-total_number_of_school_days
+def cross_val(model):
+    
+    # Train the model
+    model.fit(X_train_all, y_train)
+    
+    # Make predictions and evalute
+    model_pred = model.predict(X_val_all)
+    #model_r2 = r2_score(y_val, model_pred)
+    model_cv = cross_val_score(model, X_train_all, y_train)
+    # Return the performance metric
+    return model_cv
+
+
+lin_reg_model = LinearRegression()
+baseline_cross_val_score = cross_val_score(lin_reg_model, X_train, y_train)
+baseline_cross_val_score
+
+student_chronic_truancy_rate, teacher_retention_rate, student_attendance_rate, avg_class_size_high_school, total_number_of_school_days, high_school_dropout_rate_total, 
+
+
+
+
+
+high_school_5_year_graduation_rate_total
 student_attendance_rate
-student_chronic_truancy_rate
+number_students_who_took_ap_classes_grade_12_total
+high_school_dropout_rate_total
+number_student_enrollment
+percent_student_enrollment_white
+pupil_teacher_ratio_high_school
+percent_student_enrollment_american_indian_or_alaska_native
+total_number_of_school_days
+percent_student_enrollment_asian
+number_students_who_took_ap_classes_grade_11_total
+number_students_who_took_ap_classes_grade_10_total
+percent_student_enrollment_two_or_more_races
+percent_student_enrollment_black_or_african_american
+percent_student_enrollment_hispanic_or_latino
+percent_student_enrollment_native_hawaiian_or_other_pacific_islander
+
+
+high_school_5_year_graduation_rate_total
+high_school_dropout_rate_total
+number_student_enrollment
+number_students_who_took_ap_classes_grade_10_total
+number_students_who_took_ap_classes_grade_11_total
+number_students_who_took_ap_classes_grade_12_total
+percent_student_enrollment_american_indian_or_alaska_native
+percent_student_enrollment_asian
+percent_student_enrollment_black_or_african_american
+percent_student_enrollment_hispanic_or_latino
+percent_student_enrollment_native_hawaiian_or_other_pacific_islander
+percent_student_enrollment_two_or_more_races
+percent_student_enrollment_white
+pupil_teacher_ratio_high_school
+student_attendance_rate
+total_number_of_school_days

@@ -20,7 +20,6 @@ def clean_col(df):
                  .rstrip()
                  .replace("#", "number")
                  .replace("%", "percent") for x in df.columns]
-    return df.columns.to_list()
 
 
 
@@ -53,7 +52,7 @@ def heatmap(df, dependent_variable):
     Returns a heatmap of all independent variables' correlations with dependent variable 
     '''
 
-    plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(8, 8))
     g = sns.heatmap(df.corr()[[dependent_variable]].sort_values(by=dependent_variable), 
                     annot=True, 
                     cmap='YlGnBu', 
@@ -102,3 +101,5 @@ def forward_selected(data, response):
                                    ' + '.join(selected))
     model = smf.ols(formula, data).fit()
     return model
+
+

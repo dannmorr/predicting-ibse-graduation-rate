@@ -1,0 +1,5 @@
+hs_19.to_csv('../../data/test_set.csv', index=False)
+
+hs_18.to_csv('../../data/test_set.csv', index=False)
+
+merged_df_copy.to_csv('../../data/train_set.csv', index=False)
