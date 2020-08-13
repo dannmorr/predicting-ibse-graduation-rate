@@ -30,7 +30,7 @@ Analysis by Dann Morr
 
 ## Project Overview
 
-The goal of this project is to create a model that can predict the 4-year graduation rate of a high school cohort based on data regarding the broader structure of the instructional and the experience of previous cohorts.
+The goal of this project is to create a model that can predict the 4-year graduation rate of a high school cohort based on data regarding the broader structure of the instructional setting and the experience of previous cohorts.
 
 If it is possible to make such a prediction using readily available information it could be possible to spot performance trends, identify cohorts in need of additional resources, or for school to project target goals for improved academic outcomes.
 
