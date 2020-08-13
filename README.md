@@ -24,7 +24,6 @@ Analysis by Dann Morr
 - [Final Model Evaluation](#Final-Model-Evaluation)
 - [Conclusion](#Conclusion)
 - [Future Improvement Ideas](#Future-Improvement-Ideas)
-- [Presentation Slides](#[Presentation-Slides])
 - [Contact Information](#Contact-Information)
 
 
