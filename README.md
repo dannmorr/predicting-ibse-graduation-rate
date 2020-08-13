@@ -1,4 +1,4 @@
-# Prediciting High School Graduation Rate Based on Holistic Data of Previous Cohorts.
+# Prediciting High School Graduation Rate with Machine Learning.
 Analysis by Dann Morr
 
 ## Repo Structure and Directory
