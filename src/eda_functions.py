@@ -10,7 +10,7 @@ import statsmodels.formula.api as smf
 def clean_col(df):
 
     '''
-    clean columns
+    Clean columns headers in df
     '''
     df.columns = [x.lower()
                  .replace("-", " ")
@@ -20,6 +20,12 @@ def clean_col(df):
                  .rstrip()
                  .replace("#", "number")
                  .replace("%", "percent") for x in df.columns]
+    
+def to_obj(df, col):
+    ''' 
+    Change column from 'int' to 'object'
+    '''
+    df[col] = df[col].astype('object')    
 
 
 
@@ -27,8 +33,16 @@ def clean_col(df):
 def proj_eda(df): 
         
     '''
+    ***************************************************************************************/
+    *    Title: GraphicsDrawer source code
+    *    Author: Smith, J
+    *    Date: 2011
+    *    Code version: 2.0
+    *    Availability: http://www.graphicsdrawer.com
+    *
+    ***************************************************************************************/
     EDA functions
-    CITE
+    
     '''
     eda_df = {}
     eda_df['null_sum'] = df.isnull().sum()
@@ -48,6 +62,13 @@ def proj_eda(df):
 
 def heatmap(df, dependent_variable):
     '''
+    ***************************************************************************************/
+    *    Title: Creating Python Functions for Exploratory Data Analysis and Data Cleaning
+    *    Author: Xin, F
+    *    Date: 2020
+    *    Availability: https://github.com/FredaXin/blog_posts/blob/master/creating_functions_for_EDA.md
+    *
+    ***************************************************************************************/
     Takes df, a dependant variable as str
     Returns a heatmap of all independent variables' correlations with dependent variable 
     '''
@@ -66,6 +87,13 @@ def heatmap(df, dependent_variable):
 
 def forward_selected(data, response):
     """Linear model designed by forward selection.
+    ***************************************************************************************/
+    *    Title: Forward Selection with statsmodels
+    *    Author: Schumacher, A and Smith, T
+    *    Date: 2015
+    *    Availability: https://planspace.org/20150423-forward_selection_with_statsmodels/
+    *
+    ***************************************************************************************/
 
     Parameters:
     -----------
