@@ -15,7 +15,7 @@ Analysis by Dann Morr
 
 ## Table of contents:
 - [Project Overview](#Project-Overview)
-- [Creating an environment from the environment.yml file](#Creating-an-environment-from-the-environment.yml-file)
+- [Creating an environment from the environment yml file](#Creating-an-environment-from-the-environment-yml-file)
 - [Data Source](#Data-Source)
 - [Data Cleaning](#Data-Cleaning)
 - [Exploratory Data Analysis](#Exploratory-Data-Analysis)
@@ -24,7 +24,7 @@ Analysis by Dann Morr
 - [Final Model Evaluation](#Final-Model-Evaluation)
 - [Conclusion](#Conclusion)
 - [Future Improvement Ideas](#Future-Improvement-Ideas)
-- [Contact Information](#Contact-Information)
+- [Contact](#Contact)
 
 
 ## Project Overview
@@ -33,7 +33,7 @@ The goal of this project is to create a model that can predict the 4-year gradua
 
 If it is possible to make such a prediction using readily available information it could be possible to spot performance trends, identify cohorts in need of additional resources, or for school to project target goals for improved academic outcomes.
 
-## Creating an environment from the environment.yml file
+## Creating an environment from the environment yml file
 To run the code in these notebook, use the terminal or an Anaconda Prompt for the following steps:
 
 Create the environment from the [environment.yml](https://github.com/dannmorr/predicting-ibse-graduation-rate/blob/master/environment.yml) file:
