@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 
 import seaborn as sns
 import statsmodels.formula.api as smf
+from sklearn.metrics import r2_score
 
 
 
@@ -131,3 +132,19 @@ def forward_selected(data, response):
     return model
 
 
+# instantiates, fits, and trains a model.
+# returns adjusted r2_score
+def fit_and_eval(model, X_t, y, X_v):
+    #X_t = X_train_all
+    #X_v = X_val_all
+    #y = y_train
+    # Train the model
+    model.fit(X_t, y)
+    
+    # Make predictions and evalute
+    model_pred = model.predict(X_v)
+    model_r2 = r2_score(y_val, model_pred)
+    adj_r2 = round((1-(1-model_r2))*((3403-1)/(3403-23-1)), 3)
+
+    # Return the performance metric
+    return print(f'Adjusted R-squared on Validation Set: {adj_r2}')
